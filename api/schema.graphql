@@ -1,0 +1,39 @@
+scalar GraphQLDate
+
+type User {
+  _id: ID!
+  email: String
+  password: String!
+  created: GraphQLDate!
+  lastUpdated: GraphQLDate!
+  versionNo: Int!
+  topics: [String]
+}
+
+type Topic {
+  _id: ID!
+  name: String!
+  description: String!
+  imagePath: String!
+  created: GraphQLDate!
+  lastUpdated: GraphQLDate!
+  versionNo: Int!
+}
+
+input userInputs {
+  email: String!
+  password: String!
+}
+
+type Query {
+  userList: [User!]!
+  getUser(email: String!): User
+  signIn(email: String!, password: String!): Boolean!
+  getUserTopics(userId: ID!): [String!]!,
+  topicList: [Topic!]!
+}
+
+type Mutation {
+  addUser(user: userInputs!): User!
+  updateUserTopics(userId: ID!, topics: [String!]!): [String!]!
+}

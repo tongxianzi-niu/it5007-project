@@ -106,4 +106,5 @@ dist
 
 public/App.js
 
-node_modules
+ui/node_modules
+api/node_modules

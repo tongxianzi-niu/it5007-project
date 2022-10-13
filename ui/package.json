@@ -1,0 +1,43 @@
+{
+  "name": "it5007-project",
+  "version": "1.0.0",
+  "description": "IT5007 Group Project - Social Media Aggregator",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w uiserver.js uiserver.js",
+    "compile": "webpack --mode production",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tongxianzi-niu/it5007-project.git"
+  },
+  "author": "Beast-Leon, jenny89225, tongxianzi-niu",
+  "license": "ISC",
+  "homepage": "https://github.com/tongxianzi-niu/it5007-project",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "nodemon": "^1.19.4",
+    "react": "^16.14.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^16.14.0",
+    "react-google-login": "^5.2.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
